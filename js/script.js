@@ -22,7 +22,7 @@ if (navigator.serviceWorker) {
 function calculate() {
   // input
   const inputedNumber = parseInt(document.getElementById("textbox-a").value)
-  
+
   counter = 0
   sum = 0
 
@@ -33,4 +33,3 @@ function calculate() {
 
   document.getElementById("product").innerHTML = "The product is: " + sum
 }
-
