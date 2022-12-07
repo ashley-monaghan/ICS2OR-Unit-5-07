@@ -21,20 +21,16 @@ if (navigator.serviceWorker) {
  */
 function calculate() {
   // input
-  const a = parseInt(document.getElementById("textbox-a").value)
-  const b = parseInt(document.getElementById("textbox-b").value)
-  const c = parseInt(document.getElementById("textbox-c").value)
+  const inputedNumber = parseInt(document.getElementById("textbox-a").value)
+  
+  counter = 0
+  sum = 0
 
-  // process
-  const math = a + b + c
-  // output
-  document.getElementById("math").innerHTML = "Numbers: " + math + " units"
+  while (counter <= inputedNumber) {
+    sum = sum + counter
+    counter++
+  }
+
+  document.getElementById("product").innerHTML = "The product is: " + sum
 }
 
-/**
- * This function displays an alert.
- * Words
- */
-function button() {
-  document.getElementById("words").innerHTML = "<p>Hello, World!</p>"
-}
