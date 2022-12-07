@@ -22,7 +22,7 @@ if (navigator.serviceWorker) {
 function calculate() {
   // input
   const number = parseInt(document.getElementById("firstInputedNumber").value)
-  
+
   counter = 0
   sum = 0
 
