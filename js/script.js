@@ -21,12 +21,12 @@ if (navigator.serviceWorker) {
  */
 function calculate() {
   // input
-  const inputedNumber = parseInt(document.getElementById("textbox-a").value)
-
+  const number = parseInt(document.getElementById("firstInputedNumber").value)
+  
   counter = 0
   sum = 0
 
-  while (counter <= inputedNumber) {
+  while (counter <= number) {
     sum = sum + counter
     counter++
   }
