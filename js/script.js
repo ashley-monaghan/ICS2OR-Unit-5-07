@@ -16,20 +16,18 @@ if (navigator.serviceWorker) {
 }
 
 /**
- * This function displays an alert.
- * Math
+ * This function does multiplication.
  */
-function calculate() {
-  // input
-  const number = parseInt(document.getElementById("firstInputedNumber").value)
+function myButtonClicked() {
+  var numA = parseFloat(document.getElementById("firstInputedNumber").value)
+  var product = 0
+  var counter = 0
 
-  counter = 0
-  sum = 0
-
-  while (counter <= number) {
-    sum = sum + counter
+  while (counter <= numA) {
+    product  = product + counter
     counter++
   }
 
-  document.getElementById("product").innerHTML = "The product is: " + sum
+    document.getElementById("product").innerHTML = "The product is: " + product
+
 }
