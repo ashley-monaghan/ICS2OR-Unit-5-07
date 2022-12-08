@@ -24,10 +24,9 @@ function myButtonClicked() {
   var counter = 0
 
   while (counter <= numA) {
-    product  = product + counter
+    product = product + counter
     counter++
   }
 
-    document.getElementById("product").innerHTML = "The product is: " + product
-
+  document.getElementById("product").innerHTML = "The product is: " + product
 }
